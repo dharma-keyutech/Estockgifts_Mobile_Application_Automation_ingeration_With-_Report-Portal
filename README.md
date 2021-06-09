@@ -3,4 +3,4 @@
  
  
  
- #Goals clean install -DSuite_Name=testng.xml -DPlatformName=Android -DDevicename=MI -DApp_Name=com.estockgifts.app.scene.splash.SplashActivity
+ #Goals clean install -DSuite_Name=testng.xml -DPlatformName=Android -DDevicename=REALME -DApp_Name=com.estockgifts.app.scene.splash.SplashActivity
