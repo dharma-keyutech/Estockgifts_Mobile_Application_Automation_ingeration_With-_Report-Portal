@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<!-- -->
+	<!-- To run Perticular Suit -->
+	<groups>
+
+		<run>
+			<!--include : Used to Run the script -->
+
+			<include name="Smoke" />
+
+			<!-- exclude : Used to neglect -->
+			<exclude name="Regression" />
+			<exclude name="FullSuite" />
+
+		</run>
+
+	</groups>
+	<listeners>
+		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+
+	</listeners>
+
+	<test name="ALlfunctions">
+		<classes>
+			<class name="All_Functionalitys.Store_GiftCard_Wallet" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Regress">
+		<classes>
+			<class name="All_Functionalitys.Crypto_Buy" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="FullSuit">
+		<classes>
+			<class name="All_Functionalitys.Crypto_Sell" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
